@@ -1,4 +1,5 @@
 :root {
+	--background-color: #fdfdfd;
 }
 
 *,*::before, *::after {
@@ -10,9 +11,10 @@
 body {
 	min-height: 100vh;
 	margin: 0;
-	background-color: var(--background-color);
+	background-color: #ececec;
 	color: var(--text-color);
 	letter-spacing: -1px;
+	font-family: 'Inter', sans-serif;
 }
 
 #svelte {
@@ -25,13 +27,6 @@ a {
 	/* color:  */
 }
 
-h1,
-h2,
-p {
-	font-weight: 400;
-
-}
-
 p {
 	line-height: 1.5;
 }
@@ -39,7 +34,6 @@ p {
 h1 {
 	font-size: 2rem;
 	margin-bottom: 0 0 1em 0;
-	text-align: center;
 }
 
 h2 {
@@ -54,6 +48,16 @@ button {
 
 button:focus:not(:focus-visible) {
 	outline: none;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
 }
 
 @media (min-width: 720px) {
